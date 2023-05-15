@@ -1,0 +1,225 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+		background-color: rgb(255, 255, 255);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+}
+
+header{
+	width:  100%; /*makes the navigate fill the upmost part*/
+	height: 60px;
+	background-color: white; /*light brown*/
+	position: sticky;
+	
+	box-shadow: 0 0 10px 0 rgb(71, 71, 71);
+}
+
+header h2{
+	position: absolute;
+	padding: 3px;
+	float: left;
+	margin-left: 5%;
+	margin-top: 10px;
+	font-family: 'papyrus','fantasy';
+	color: #2d30da; 
+}
+
+header img {
+  margin:5px;
+  float: left;
+  border-radius: 50%; /*to make the logo round*/
+  height: 50px;
+  width: 50px;
+}
+
+	article{
+		animation-name: begin;
+		animation-duration: 1.5s;
+		animation-iteration-count: 1;
+}
+
+/*index html style*/
+.indexheading{
+	margin-top: 50px;
+	margin-left: 90px;
+	width: 50%;
+	color: #0b35c0; /*dark brown*/
+	font-family: arial black, sans-serif;
+	font-size: 2vw;
+	text-align: left;
+	position: relative;
+}
+
+.indexpar1{
+	margin-top: 10px;
+	margin-left: 90px;
+	padding: 10px;
+	width: 40%;
+	color: #262012;
+	border: 2px solid black;
+	border-color: #0b35c0;
+	border-radius: 10px 20px 10px 20px; /*changes bordar radius of each corner*/
+	background-color:#e4e9f8; 
+	font-family: garamond, serif;
+	font-size: 1.5vw;
+	text-align: left;
+}
+
+.login {
+	margin-right: 90px;
+	padding: 5px 50px;
+	width: 25%;
+    float: right;
+	color: #262012;
+	border: 2px solid #0b35c0;
+	border-color: #0b35c0;
+	border-radius: 20px; /*changes bordar radius of each corner*/
+	background-color: #e4e9f8;
+	font-family: garamond, serif;
+}
+form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border-color: #0b35c0;
+}
+
+form input[type="text"]  {
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 90%;
+    border-color: #0b35c0;
+    background-color:  #fcfcfc;
+}
+
+form input[type="text"]:focus{
+    background-color: #91aaf7;
+}
+
+h5{
+    color: #262012; /*dark brown*/
+	font-family: arial black, sans-serif;
+	font-size: 1vw;
+}
+
+span {
+    color: rgb(228, 46, 46);
+}
+
+form button[type="submit"],
+form button[type="reset"] {
+    margin: 30px 5px;
+	border: none;
+	border-radius: 20px;
+    outline: none;
+    width: 40%;
+ 	display: inline-block;
+    padding: 10px 30px;
+    color: rgb(226, 0, 0);
+    background-color: #ffffff; 
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    box-shadow: 0 8px 10px rgb(10, 63, 207); /*adds shadow*/
+ }
+
+ form button[type="submit"] h1,
+form button[type="reset"] h1 {
+ 	color: rgb(255, 64, 57); /*changes the color of the link*/
+ 	text-decoration: none; /*removes the underline beneath the link*/
+    text-align: center;
+ }
+
+ form button[type="submit"]:hover,
+form button[type="reset"]:hover {
+  background-color: lightgray; /*light gray*/
+  color: white;
+  transform: scale(1.1); /*makes the button larger*/
+}
+
+footer{
+	text-align: center;
+	background-color:rgb(255, 255, 255);
+	width: 100%;
+	position: absolute;
+	bottom: 0; /*makes the footer stay at the bottom*/
+	left: 0;
+	right: 0;
+	color: rgb(0, 0, 0); 
+	padding-bottom: 2px;
+	padding-top: 9px;
+	box-shadow: 0 0 10px 0 rgb(71, 71, 71);
+}
+
+h4{
+    font-size: 15px;
+	font-family: garamond, serif;
+}
+
+footer ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+#fb {
+	background: url(sites.jpg) no-repeat -82px -13px/600px 130px; /*changes the location of the icon/the size of the photo*/
+	width: 30px; /*size of the icons on the website*/
+	height: 29px;
+	border-radius: 20%; /*makes it rounder*/
+}
+
+#twt {
+	background: url(sites.jpg) no-repeat -198px -13px/600px 130px;
+	width: 30px;
+	height: 29px;
+	border-radius: 20%;
+}
+
+#ig {
+	background: url(sites.jpg) no-repeat -25px -13px/600px 130px;
+	width: 30px;
+	height: 29px;
+	border-radius: 20%;
+}
+
+#fb:hover {
+	background: url(sites.jpg) no-repeat -82px -54px/600px 130px;
+	width: 30px;
+	height: 29px;
+	border-radius: 20%;
+}
+
+#twt:hover {
+	background: url(sites.jpg) no-repeat -198px -54px/600px 130px;
+	width: 30px;
+	height: 29px;
+	border-radius: 20%;
+}
+
+#ig:hover {
+	background: url(sites.jpg) no-repeat -25px -54px/600px 130px;
+	width: 30px;
+	height: 29px;
+	border-radius: 20%;
+}
+
+::selection{
+	color:white; /*changes a color once something is selected*/
+	background:#f00606;
+}
